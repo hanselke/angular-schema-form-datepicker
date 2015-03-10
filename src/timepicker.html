@@ -1,5 +1,5 @@
 <div class="form-group {{form.htmlClass}}" ng-class="{'has-error': hasError()}">
-  <label class="control-label" ng-show="showTitle()">{{form.title}}</label>
+  <label class="control-label" ng-show="showTitle()">TimePicker: {{form.title}}</label>
 
   <input ng-show="form.key"
          style="background-color: white"
@@ -7,9 +7,9 @@
          class="form-control {{form.fieldHtmlClass}}"
          schema-validate="form"
          ng-model="$$value$$"
-         pick-a-date
-         min-date="form.minDate"
-         max-date="form.maxDate"
+         pick-a-time
+         min-time="form.minTime"
+         max-time="form.maxTime"
          format="form.format"
          />
 
