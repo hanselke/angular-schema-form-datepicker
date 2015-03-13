@@ -7,6 +7,7 @@
          class="form-control {{form.fieldHtmlClass}}"
          schema-validate="form"
          ng-model="$$value$$"
+         ng-disabled="form.readonly"
          pick-a-time
          min-time="form.minTime"
          max-time="form.maxTime"
