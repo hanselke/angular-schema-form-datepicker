@@ -9,9 +9,7 @@
          ng-model="$$value$$"
          ng-disabled="form.readonly"
          pick-a-time
-         min-time="form.minTime"
-         max-time="form.maxTime"
-         format="form.format"
+         pick-a-time-options=form
          />
 
   <span class="help-block">{{ (hasError() && errorMessage(schemaError())) || form.description}}</span>

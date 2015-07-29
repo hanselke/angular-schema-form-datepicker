@@ -9,9 +9,7 @@
          ng-model="$$value$$"
          ng-disabled="form.readonly"
          pick-a-date
-         min-date="form.minDate"
-         max-date="form.maxDate"
-         format="form.format"
+         pick-a-date-options=form
          />
 
   <span class="help-block">{{ (hasError() && errorMessage(schemaError())) || form.description}}</span>
