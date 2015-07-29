@@ -23,16 +23,16 @@ angular.module('schemaForm').directive('pickADate', function() {
       format: '='
     },
     link: function(scope, element, attrs, ngModel) {
-      console.log(element);
+      element = $(element);
       //Bail out gracefully if pickadate is not loaded.
-      if (!$(element).pickadate) {
+      if (!element.pickadate) {
         return;
       }
 
       //By setting formatSubmit to null we inhibit the
       //hidden field that pickadate likes to create.
       //We use ngModel formatters instead to format the value.
-      $(element).pickadate({
+      element.pickadate({
         onClose: function() {
           element.blur();
         },
